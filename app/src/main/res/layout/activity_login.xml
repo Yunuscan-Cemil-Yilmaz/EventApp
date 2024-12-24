@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:orientation="vertical"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:padding="16dp"
+             android:gravity="center"
+             android:background="@color/white">
+
+    <!-- Email Input -->
+    <EditText
+        android:id="@+id/emailInputLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Password Input -->
+    <EditText
+        android:id="@+id/passwordInputLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Navigate Forgot Password -->
+    <TextView
+        android:id="@+id/navigateForgotPasswordFromLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dont you remember your password?"
+        android:textColor="@color/info"
+        android:layout_gravity="end"
+        android:layout_marginBottom="24dp"
+        android:clickable="true"
+        android:focusable="true"/>
+
+    <!-- Login Button -->
+    <Button
+        android:id="@+id/logginButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:backgroundTint="@color/primary"
+        android:textColor="@color/white"
+        android:padding="12dp"
+        android:textSize="16sp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Login with Google Button -->
+    <Button
+        android:id="@+id/loginWithGoogleButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login with Google"
+        android:backgroundTint="@android:color/white"
+        android:textColor="@color/primary"
+        android:elevation="4dp"
+        android:padding="12dp"
+        android:textSize="16sp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- Navigate Signup -->
+    <TextView
+        android:id="@+id/navigateSignupFromLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don't you have an account? Let's create one"
+        android:textColor="@color/info"
+        android:layout_gravity="center"
+        android:clickable="true"
+        android:focusable="true"/>
+
+</LinearLayout>
