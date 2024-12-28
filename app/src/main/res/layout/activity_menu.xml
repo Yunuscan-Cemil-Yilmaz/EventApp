@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Üstteki TextView -->
+    <TextView
+        android:id="@+id/helloUserOnMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hello User"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Üstteki TextView -->
+    <TextView
+        android:id="@+id/welcomeAppOnMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome to EventApp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Home Buton -->
+    <Button
+        android:id="@+id/navigateHomeFromMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Home"
+        android:layout_marginBottom="8dp"
+        android:background="@color/primary"/>
+
+    <!-- Maps Buton -->
+    <Button
+        android:id="@+id/navigateMapFromMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Map"
+        android:layout_marginBottom="8dp"
+        android:background="@color/warning"/>
+
+    <!--  Profile Buton -->
+    <Button
+        android:id="@+id/navigateToProfileFromMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Profile"
+        android:layout_marginBottom="8dp"
+        android:background="@color/success"/>
+
+    <!--  Notifications Buton -->
+    <Button
+        android:id="@+id/navigateToNotifications"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Notifications"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Log Out Button -->
+    <Button
+        android:id="@+id/logOutButtonOnMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Log Out"
+        android:layout_marginBottom="8dp"
+        android:background="@color/danger"/>
+
+</LinearLayout>
