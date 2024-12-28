@@ -55,6 +55,12 @@
         <activity
             android:name=".NotificationsSettingsActivity">
         </activity>
+        <activity
+            android:name=".ProfileSettingsActivity">
+        </activity>
+        <activity
+            android:name=".ResetPasswordActivity">
+        </activity>
     </application>
 
 </manifest>

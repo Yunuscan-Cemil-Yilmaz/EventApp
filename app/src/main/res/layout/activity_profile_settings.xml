@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Nickname Field -->
+    <TextView
+        android:id="@+id/nicknameLabelOnProfileSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nickname:"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/nicknameEditTextOnProfileSettings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Nickname"
+        android:padding="8dp"
+        android:background="@android:drawable/edit_text"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Name Field -->
+    <TextView
+        android:id="@+id/nameLabelOnProfileSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name:"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/nameEditTextOnProfileSettings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Name"
+        android:padding="8dp"
+        android:background="@android:drawable/edit_text"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Surname Field -->
+    <TextView
+        android:id="@+id/surnameLabelOnProfileSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Surname:"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/surnameEditTextOnProfileSettings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Surname"
+        android:padding="8dp"
+        android:background="@android:drawable/edit_text"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Save Button -->
+    <Button
+        android:id="@+id/saveButtonOnProfileSettings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:background="@android:color/holo_green_light"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="32dp" />
+
+    <!-- Bottom Fixed Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:padding="8dp">
+
+        <Button
+            android:id="@+id/cancelButtonOnProfileSettings"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Cancel"
+            android:background="@android:color/holo_red_light"
+            android:textColor="@android:color/white"
+            android:layout_marginEnd="8dp" />
+
+        <Button
+            android:id="@+id/menuButtonOnProfileSettings"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Menu"
+            android:layout_marginStart="8dp" />
+    </LinearLayout>
+
+</LinearLayout>
