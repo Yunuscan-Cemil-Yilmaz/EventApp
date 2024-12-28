@@ -6,7 +6,7 @@
     android:orientation="vertical"
     android:padding="16dp">
 
-    <!-- Üstteki TextView -->
+    <!-- Hello TextView -->
     <TextView
         android:id="@+id/helloUserOnMenu"
         android:layout_width="match_parent"
@@ -17,7 +17,7 @@
         android:gravity="center"
         android:layout_marginBottom="16dp"/>
 
-    <!-- Üstteki TextView -->
+    <!-- Wellcome TextView -->
     <TextView
         android:id="@+id/welcomeAppOnMenu"
         android:layout_width="match_parent"
