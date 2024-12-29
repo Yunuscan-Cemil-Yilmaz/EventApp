@@ -1,12 +1,98 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:padding="16dp">
 
+    <!-- Header -->
     <TextView
+        android:id="@+id/notificationsHeaderOnNotifSettings"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="notif"/>
+        android:text="Notifications"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:textColor="@color/info"/>
 
-</LinearLayout>
+    <!-- Switches -->
+    <Switch
+        android:id="@+id/notificationsSwitchOnNotifSettings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="I want to receive notifications for upcoming events"
+        android:layout_below="@id/notificationsHeaderOnNotifSettings"
+        android:layout_marginBottom="8dp" />
+
+    <Switch
+        android:id="@+id/newEventsSwitchOnNotifSettings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="I want to receive notifications for new events"
+        android:layout_below="@id/notificationsSwitchOnNotifSettings"
+        android:layout_marginBottom="8dp" />
+
+    <Switch
+        android:id="@+id/customizedNotificationsSwitchOnNotifSettings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="I want to receive customized notifications"
+        android:layout_below="@id/newEventsSwitchOnNotifSettings"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Save Button -->
+    <Button
+        android:id="@+id/saveButtonOnNotifSettings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:layout_below="@id/customizedNotificationsSwitchOnNotifSettings"
+        android:layout_marginBottom="8dp"
+        android:background="@color/success"
+        android:textColor="@color/white"/>
+
+    <!-- List Notifications Button -->
+    <Button
+        android:id="@+id/listNotificationsButtonOnNotifSettings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="List Notifications"
+        android:layout_below="@id/saveButtonOnNotifSettings"
+        android:layout_marginBottom="8dp"
+        android:background="@color/primary"
+        android:textColor="@color/white" />
+
+    <!-- Add a New Notification Button -->
+    <Button
+        android:id="@+id/addNotificationButtonOnNotifSettings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add a New Notification"
+        android:layout_below="@id/listNotificationsButtonOnNotifSettings"
+        android:layout_marginBottom="16dp"
+        android:background="@color/primary"
+        android:textColor="@color/white"/>
+
+    <!-- Cancel Button -->
+    <Button
+        android:id="@+id/cancelButtonOnNotifSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginEnd="8dp"
+        android:background="@color/danger"
+        android:textColor="@color/white"/>
+
+    <!-- Menu Button -->
+    <Button
+        android:id="@+id/menuButtonOnNotifSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Menu"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@id/cancelButtonOnNotifSettings"/>
+</RelativeLayout>
