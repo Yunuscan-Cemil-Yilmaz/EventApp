@@ -36,6 +36,7 @@ class ProfileActivity : ComponentActivity() {
         resetPasswordButton = findViewById(R.id.resetPasswordButtonOnProfile)
 
         // navigates:
+        findViewById<Button>(R.id.favsButtonOnProfile).setOnClickListener { navigateToFavEventList() }
         findViewById<Button>(R.id.resetPasswordButtonOnProfile).setOnClickListener { navigateResetPassword() }
         findViewById<Button>(R.id.designProfileButtonOnProfile).setOnClickListener { navigateProfileSettings() }
         findViewById<Button>(R.id.menuButtonOnProfile).setOnClickListener { navigateMenu() }
@@ -84,7 +85,7 @@ class ProfileActivity : ComponentActivity() {
                     val isEmailPasswordLogin = checkIfEmailPasswordLogin(currentUser)
                     resetPasswordButton.visibility = if (isEmailPasswordLogin) View.VISIBLE else View.GONE
                 } else {
-                    Toast.makeText(this, "Kullanıcı verileri bulunamadı!", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this, "User datas can't find", Toast.LENGTH_SHORT).show()
                 }
             }
             .addOnFailureListener { e ->
@@ -131,6 +132,11 @@ class ProfileActivity : ComponentActivity() {
 
     private fun navigateToLogin(){
         val intent = Intent(this, LoginActivity::class.java)
+        startActivity(intent)
+    }
+
+    private fun navigateToFavEventList(){
+        val intent = Intent(this, FavoriteEventsActivity::class.java)
         startActivity(intent)
     }
 }

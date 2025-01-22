@@ -62,6 +62,7 @@ class MenuActivity: ComponentActivity() {
                         "surname" to surname,
                         "userName" to "user",
                         "favs" to emptyList<String>(),
+                        "events" to emptyList<String>(),
                         "commends" to emptyList<Map<String, Any>>(),
                         "scors" to emptyList<Map<String, Any>>(),
                         "notifPerTimeComming" to false,
@@ -72,7 +73,7 @@ class MenuActivity: ComponentActivity() {
 
                     userDocRef.set(userData)
                         .addOnSuccessListener {
-                            Log.i("Firesote", "User saved successful")
+                            Log.i("Firestore", "User saved successful")
                         }
                         .addOnFailureListener { e ->
                             Log.e("Firestore", "Kullanıcı verisi kaydedilirken hata oluştu: ${e.message}")
@@ -87,7 +88,7 @@ class MenuActivity: ComponentActivity() {
                 helloTextView.text = "Hello $userName"
             }
             .addOnFailureListener { e ->
-                Log.e("Firestore", "Firestore'dan veri alınırken hata oluştu: ${e.message}")
+                Log.e("Firestore", "Failed on get data at firestore ${e.message}")
             }
     }
 
@@ -102,7 +103,7 @@ class MenuActivity: ComponentActivity() {
     }
 
     private fun navigateToMap(){
-        val intent = Intent(this, MapActivity::class.java)
+        val intent = Intent(this, MapsActivity::class.java)
         startActivity(intent)
     }
 

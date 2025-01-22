@@ -53,24 +53,13 @@
         android:background="@color/success"
         android:textColor="@color/white"/>
 
-    <!-- List Notifications Button -->
-    <Button
-        android:id="@+id/listNotificationsButtonOnNotifSettings"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="List Notifications"
-        android:layout_below="@id/saveButtonOnNotifSettings"
-        android:layout_marginBottom="8dp"
-        android:background="@color/primary"
-        android:textColor="@color/white" />
-
     <!-- Add a New Notification Button -->
     <Button
         android:id="@+id/addNotificationButtonOnNotifSettings"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Add a New Notification"
-        android:layout_below="@id/listNotificationsButtonOnNotifSettings"
+        android:layout_below="@id/saveButtonOnNotifSettings"
         android:layout_marginBottom="16dp"
         android:background="@color/primary"
         android:textColor="@color/white"/>

@@ -71,7 +71,6 @@ class NotificationsSettingsActivity: ComponentActivity() {
             }
         }
 
-        findViewById<Button>(R.id.listNotificationsButtonOnNotifSettings).setOnClickListener { navigateNotificationList() }
         findViewById<Button>(R.id.addNotificationButtonOnNotifSettings).setOnClickListener { navigateAddNotif() }
         findViewById<Button>(R.id.cancelButtonOnNotifSettings).setOnClickListener { navigateCancel() }
         findViewById<Button>(R.id.menuButtonOnNotifSettings).setOnClickListener { navigateMenu() }
@@ -101,11 +100,6 @@ class NotificationsSettingsActivity: ComponentActivity() {
 
     private fun navigateAddNotif(){
         val intent = Intent(this, AddNotificationActivity::class.java)
-        startActivity(intent)
-    }
-
-    private fun navigateNotificationList(){
-        val intent = Intent(this, ListNotificationsActivity::class.java)
         startActivity(intent)
     }
 }
