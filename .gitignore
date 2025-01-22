@@ -32,9 +32,12 @@ replay_pid*
 # Sisteme özel dosyalar
 /local.properties
 .DS_Store
+<<<<<<< HEAD
 
 # Stop ignoring the libs.versions.toml file
 !gradle/libs.versions.toml
+=======
+>>>>>>> origin/main
 
 # firebase apies
 /app/google-services.json
